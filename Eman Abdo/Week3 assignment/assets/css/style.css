@@ -1,0 +1,81 @@
+.one {
+  display: flex;
+  border: bottom 2px solid white;
+  justify-content: center;
+}
+.alyoum img {
+  width: 150px;
+  height: 60px;
+}
+.announce img {
+  width: 30px;
+  height: 30px;
+  margin-top: 25px;
+  margin-right: 50px;
+}
+.announce span {
+  color: red;
+  font-weight: bolder;
+  position: absolute;
+  top: 40px;
+  margin-right: 15px;
+  font-weight: bolder;
+}
+.date  img {
+  width: 30px;
+  height: 30px;
+  margin-top: 20px;
+  margin-right: 150px;
+}
+.date span {
+  font-weight: bolder;
+  position: absolute;
+  top: 40px;
+  margin-right: 15px;
+  font-weight: bold;
+}
+.time img {
+  width: 30px;
+  height: 30px;
+  margin-top: 25px;
+  margin-right: 150px;
+}
+.time span {
+  font-weight: bolder;
+  position: absolute;
+  top: 40px;
+  margin-right: 10px;
+  font-weight: bold;
+}
+.two {
+  display: flex;
+  background-color: #000000ad;
+  height: 50px;
+  justify-content: center;
+}
+
+.home img {
+  width: 20px;
+  height: 20px;
+  margin-top: 15px;
+  margin-right: 20px;
+  position: absolute;
+  right: 400px;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 15px;
+}
+li {
+  display: inline-block;
+}
+a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+}
+a:hover {
+  color: red;
+}
+

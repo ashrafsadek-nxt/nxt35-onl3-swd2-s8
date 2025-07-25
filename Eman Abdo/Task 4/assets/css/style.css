@@ -1,0 +1,26 @@
+p{
+    color: blueviolet;
+    font-size: 20px;
+    font-family: 'Gill Sans';
+    text-align: center;
+    text-shadow: 3px 4px blueviolet;
+    font-weight: bolder;
+    font-style: italic;
+    direction: ltr;
+    word-spacing:30px;
+    word-break: break-all;
+    word-wrap: break-word;
+    line-height: 45px;
+    letter-spacing: 7px;
+    text-decoration: underline;
+    text-transform: capitalize;
+}
+    span{
+        color: blue;
+        font-size: large;
+    }
+
+div{
+    color: red;
+    font-family:  sans-serif;
+}

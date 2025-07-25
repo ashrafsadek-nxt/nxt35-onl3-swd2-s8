@@ -1,0 +1,106 @@
+body {
+    direction: rtl;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #fff;
+}
+
+.top-bar {
+    background-color: #f5f5f5;
+    padding: 8px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: #333;
+    position: relative;
+}
+
+.right-bar {
+    text-align: center;
+    flex: 1;
+}
+
+.right-bar .logo {
+    width: 100px;
+    height: 30px;
+    padding: 15px;
+    padding-left: 50px;
+}
+
+.right-bar .ann-logo {
+    width: 40px;
+    height: 50px;
+}
+
+.right-bar .ann {
+    color: red;
+    font-size: 50px;
+    font-weight: bold;
+    align-items: center;
+    padding: 15px;
+}
+
+.left-bar {
+    text-align: center;
+    flex: 1;
+}
+
+.left-bar .cal-logo {
+    width: 40px;
+}
+
+.left-bar .time-logo {
+    width: 40px;
+}
+
+.left-bar .cal {
+    padding: 10px;
+    padding-left: 20px;
+}
+
+.left-bar .time {
+    padding: 10px;
+}
+
+.navbar {
+  background-color: #333;
+  padding: 0 20px; 
+}
+
+.navbar {
+  background-color: #333;
+  padding: 0;
+}
+
+.navbar ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.navbar li {
+  flex: 1; 
+}
+
+.navbar a {
+  display: block;
+  padding: 14px 0;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+.navbar a:hover {
+  background-color: #444;
+  color: red;
+}
+
+.navbar .home-logo {
+    width: 30px;
+    height: 30px;
+    padding-top: 7px;
+}
