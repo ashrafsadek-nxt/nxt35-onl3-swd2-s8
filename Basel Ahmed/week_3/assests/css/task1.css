@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* typography styling */
 p, pre {
     color: #474d44;
@@ -30,3 +31,37 @@ div {
     font-weight: bolder;
     font-style: italic;
 }
+=======
+/* typography styling */
+p, pre {
+    color: #474d44;
+    direction: ltr;
+    opacity: 1;
+    line-height: 25px;
+    letter-spacing: 21px;
+    word-spacing: 30px;
+    word-break: break-all;
+    word-wrap: break-word;
+    font-size: xx-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-style: italic; /* <i> <em> */
+    text-decoration: underline; /* <u> */
+    text-transform: lowercase;
+    text-shadow: 5px 7px 6px gray;
+    text-indent: 50px;
+    text-align: left;
+}
+
+span {
+    color: red;
+}
+
+div {
+    color: blueviolet;
+    font-size: xx-large;
+    font-family: Georgia;
+    font-weight: bolder;
+    font-style: italic;
+}
+>>>>>>> 822511f89b0a0e464f8ac2faad2b7869fdd3fd0f
