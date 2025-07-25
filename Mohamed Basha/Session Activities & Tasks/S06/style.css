@@ -1,0 +1,32 @@
+p,
+pre {
+  color: #474d44;
+  direction: ltr;
+  opacity: 1;
+  line-height: 25px;
+  letter-spacing: 18px;
+  word-spacing: 25px;
+  word-wrap: break-word;
+  font-size: xx-large;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bolder;
+  font-style: italic;
+  text-decoration: underline;
+  text-transform: lowercase;
+  text-shadow: 5px 7px 6px gray;
+  text-indent: 50px;
+  text-align: left;
+}
+
+span {
+  color: red;
+  text-indent: 100px;
+}
+
+div {
+  color: blueviolet;
+  font-size: xx-large;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bolder;
+  font-style: italic;
+}
