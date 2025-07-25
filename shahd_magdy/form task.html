@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your form</title>
+</head>
+<body>
+    <form action="" method="get" >
+    <h2>Register Now</h2>
+    <label for="name">Name</label>
+    <input type="text" id="name" name="username" placeholder="enter your name" autofocus required>
+    <br>
+    <div>
+    Gender ?
+    <label for="mmm">male</label>
+    <input type="radio" name="gender" value="male" id="mmm" checked>
+    <label for="fff">female</label>
+    <input type="radio" name="gender" value="male" id="fff">
+    </div>
+    <div>
+    <label for="tel">your telephone number</label>
+    <input type="tel" id="tel" maxlength="11">
+    </div>
+    <div>
+        <label for="email">enter your email</label>
+        <input type="email" name="email" id="email">
+    </div>
+    <div>
+        <label for="file">uploud your cv </label>
+        <input type="file" name="file" id="file" required>
+    </div>
+    <div>
+        <label for="sss">enter your government</label>
+        <input type="text" name="government" id="sss" list="government">
+        <datalist id="government">
+            <option value="Cairo"></option>
+            <option value="Alex"></option>
+            <option value="Giza"></option>
+            <option value="Monufia"></option>
+            <option value="Suez"></option>
+            <option value="Ismalia"></option>
+            <option value="Beheira"></option>
+        </datalist>
+    </div>
+    <div>
+        <label for="mmmm">enter your date of birth</label>
+        <input type="date" name="birthdate" id="mmmm" required>
+    </div>
+    <div>
+        <label for="age">enter your age</label>
+        <input type="number" name="age" id="age" min="18" max="45">
+    </div>
+    <div>
+        <p>what languages do you speak?</p>
+        <label for="ggg">English</label>
+        <input type="checkbox" name="languages" id="ggg">
+        <label for="ppp">Arabic</label>
+        <input type="checkbox" name="languages" id="ppp" checked>
+        <label for="aaa">Deutsch</label>
+        <input type="checkbox" name="languages" id="aaa">
+        <label for="nnn">French</label>
+        <input type="checkbox" name="languages" id="nnn">
+    </div>
+    <div>
+        <textarea name="" id="" rows="20" cols="30"  minlength="5" maxlength="100" placeholder="Type your message"></textarea>
+    </div>
+    <label for="rate">rate us </label>
+    <input type="range" min="1" max="10" step="2">
+    <div>
+    <input type="submit" name="save" id="" value="submit">
+    <input type="reset" name="" id="" value="delete">
+    </div>
+    </form>
+</body>
+</html>
