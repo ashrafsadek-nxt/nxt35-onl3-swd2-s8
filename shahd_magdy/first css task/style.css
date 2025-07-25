@@ -1,0 +1,19 @@
+p{color: rgb(177, 51, 51);
+direction: ltr;
+opacity: 1;
+word-spacing: 20px;
+font-size: x-large;
+font-family: Georgia, 'Times New Roman', Times, serif;
+text-decoration: underline;
+text-transform: lowercase;
+font-style: initial;
+word-break: break-all;
+text-align: center;
+text-indent: 30px;
+
+}
+div{color: rgb(64, 43, 226);
+font-size: larger;
+font-style: italic;}
+span{color: aquamarine;}
+pre{color: brown;}
