@@ -1,0 +1,51 @@
+
+.navbar {
+  background-color: #333;
+  padding: 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  align-items: center;
+  gap: 23px;
+  max-width: none; 
+  margin: 0 auto;    
+  direction: rtl;    
+}
+
+
+.navbar a {
+  color:#ccc;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+
+.navbar a:hover {
+  color: red;
+}
+
+
+.navbar img {
+  vertical-align: middle;
+  margin-left: -12px;
+}
+
+
+
+.logo1{margin-left:50px;
+margin-right:500px;}
+.logo2{
+    margin-left: 50px ;
+    padding-left: 50px;
+    border-left: dashed #ccc;
+}
+
+.top{
+  display: flex;
+  margin-top: 10px;
+}
+
+.date{margin-top: 8px;
+margin-right: 30px;}
