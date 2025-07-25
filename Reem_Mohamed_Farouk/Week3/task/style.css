@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    font-family: "Cairo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+}
+
+
+.top-nav {
+    background-color: #f4f4f4;
+    padding: 8px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: #333;
+}
+
+.top-nav i {
+    color: red;
+    margin: 0 10px;
+}
+
+.top-nav div {
+    margin: 0px 50px;
+}
+
+.ad-section {
+    color: red;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.ad-icon {
+    margin-left: 5px;
+    font-size: 18px;
+}
+
+
+.nav2 {
+    background-color: #333;
+}
+
+.nav2 nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+
+.nav2 nav ul li {
+    margin: 0 10px;
+}
+
+.nav2 nav ul li a {
+    display: block;
+    padding: 12px 8px;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    transition: background 0.3s;
+}
+
+.nav2 nav ul li a:hover {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+.nav2 i.fa-home {
+    margin-left: 4px;
+}
