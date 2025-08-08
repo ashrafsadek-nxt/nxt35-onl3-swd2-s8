@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sum of Numbers</title>
+</head>
+<body>
+  <script>
+    let sum = 0;
+    while (true) {
+      let input = prompt("Enter a number (Enter 0 to stop, or stop when total exceeds 100):");
+      if (input === null) {
+        alert("Input cancelled by the user.");
+        break;
+      }
+      let number = parseFloat(input);
+      if (isNaN(number)) {
+        alert("Please enter a valid number.");
+        continue;
+      }
+      if (number === 0) {
+        break;
+      }
+      sum += number;
+      if (sum > 100) {
+        alert("The total sum exceeded 100. Stopping input.");
+        break;
+      }
+    }
+    alert("The total sum of entered numbers is: " + sum);
+  </script>
+</body>
+</html>

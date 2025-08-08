@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Character Counter</title>
+</head>
+<body>
+  <script>
+    let text = prompt("Enter a sentence:");
+    let targetChar = prompt("Enter the character you want to count:");
+    let isCaseSensitive = prompt("Do you want to consider case sensitivity? (yes or no):");
+    let count = 0;
+    if (isCaseSensitive.toLowerCase() === "no") {
+      text = text.toLowerCase();
+      targetChar = targetChar.toLowerCase();
+    }
+    for (let i = 0; i < text.length; i++) {
+      if (text[i] === targetChar) {
+        count++;
+      }
+    }
+    if (count > 0) {
+      alert("The character '" + targetChar + "' exists and appears " + count + " time(s).");
+    } else {
+      alert("The character '" + targetChar + "' does not exist in the sentence.");
+    }
+  </script>
+</body>
+</html>

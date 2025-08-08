@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Parent Window</title>
+  <script>
+    function openAdWindow() {
+      const adWindow = window.open("", "AdWindow", "width=400,height=300,scrollbars=yes");
+      adWindow.document.write(`
+        <h2>Special Offer!</h2>
+        <p>Don't miss out on our amazing deals.</p>
+        <p>Scroll down for more...</p>
+        <div style="height: 1000px;">More content here to scroll...</div>
+      `);
+    }
+  </script>
+</head>
+<body>
+  <button onclick="openAdWindow()">Open Ad Window</button>
+</body>
+</html>

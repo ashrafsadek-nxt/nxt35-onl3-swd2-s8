@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>Al Youm Al Sabea</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Tahoma', sans-serif;
+      background-color: #f9f9f9;
+    }
+
+    /* الشريط العلوي */
+    .header-top {
+      background-color: #ffffff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 25px;
+      border-bottom: 2px solid #ccc;
+    }
+
+    /* لوجو اليوم السابع */
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+      color: red;
+    }
+
+    .logo span {
+      color: black;
+    }
+
+    /* التاريخ والوقت */
+    .date-time {
+      color: #444;
+      font-size: 14px;
+    }
+
+    /* زر إعلان */
+    .ad-button {
+      background-color: red;
+      color: white;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 13px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .ad-button:hover {
+      background-color: darkred;
+    }
+
+    /* الهيدر الأقسام */
+    .nav-bar {
+      background-color: #222;
+      color: white;
+      display: flex;
+      padding: 12px 20px;
+      gap: 18px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .nav-bar a {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+      transition: color 0.3s;
+    }
+
+    .nav-bar a:hover {
+      color: #ff4d4d;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .header-top {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- الشريط العلوي -->
+  <div class="header-top">
+    <div class="logo">اليوم <span>السابع</span></div>
+
+    <div class="date-time">🗓 الأحد 20 يوليو 2025 - 06:46 ص</div>
+
+    <div class="ad-button">
+     📣 إعلان
+    </div>
+  </div>
+
+  <!-- شريط الأقسام -->
+  <div class="nav-bar">
+    <a href="#">الرئيسية</a>
+    <a href="#">عاجل</a>
+    <a href="#">سياسة</a>
+    <a href="#">تقارير</a>
+    <a href="#">حوادث</a>
+    <a href="#">عرب</a>
+    <a href="#">عالم</a>
+    <a href="#">تحقيقات</a>
+    <a href="#">اقتصاد</a>
+    <a href="#">رياضة</a>
+    <a href="#">كرة عالمية</a>
+    <a href="#">المزيد</a>
+  </div>
+
+</body>
+</html>
