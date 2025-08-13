@@ -1,0 +1,90 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>Form</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/lib/boot">
+    </head>
+    <body>
+        <form action="index.html" method="get" enctype="">
+            <div>
+                <input type="text" name="username" placeholder="Enter user name.."autofocus>
+            </div>
+            <br>
+            <div>
+                <input type="email" placeholder="Enter your email.." required>
+            </div>
+            <br>
+            <div> 
+                <input type="password" name="pwd" id="pass" autocomplete="on"
+                placeholder="Enter your password ..." required>
+            </div>
+            <br>
+            <div>
+                <label for="male">Male</label>
+                <input type="radio" name="gender" value="male"id="Male">
+                <label for="female">Female</label>
+                <input type="radio" name="gender" value="female" id="Female" >
+            </div>
+            <br>
+            <div>
+                <label for="Nationality">Nationality</label>
+                <input type="Nationality" name="" id="" list="nationality">
+                <datalist id="nationality"></option>
+                <option value="Egypt">
+                <option value="Palastine">
+                <option value="Morcoo">
+                <option value="Tunsia">
+                
+            </div>
+            <br>
+            <div>
+                <select name="" id="" multiple>
+                    <option selected disabled>Select city</option>
+                    <option value="ca">Cairo</option>
+                    <option value="gi">Giza</option>
+                    <option value="alx">Alex</option>
+                    <option value="cas">Casablanca</option>
+                    <option value="gza">Ghaza</option>
+                    <option value="sfks">Sfakes</option>
+
+                </select>
+            </div>
+            <br>
+            <div>
+                <input type="number" name="" id="" min="10" max="50" placeholder="Age">
+            </div>
+            <br>
+            <div>
+                <label for="">Birthdate</label>
+                <input type="date" name="" id="">
+            </div>
+            <br>
+            <div>
+                <input type="file" name="" id="">
+            </div>
+            <br>
+            <div>
+                <textarea name="" id="" title="search" cols="60" rows="5" minlength="10" maxlength="500" placeholder="Enter your message..." required></textarea>
+            </div>
+            <br>
+            <div>
+                <label for="">Rate us</label>
+                <input type="range" min="1" max="5" name="" id="">
+            </div>
+            <br>
+            <div>
+                <input type="reset" value="Reset">
+                <input type="submit" value="Save">
+            </div>
+        </form>
+        
+    </body>
+    </html>
