@@ -1,0 +1,34 @@
+
+#sec{
+    background-color:rgb(70, 70, 70) ;
+    width: 100%;
+    height: 7vh; 
+    text-align: center
+}
+
+#sec .art{
+    display: inline-block;
+    width: 4.5%;  
+    height:4%;
+   
+}
+a{
+    text-decoration: none;
+    
+}
+span{
+    color: white;
+    font-size: large;
+
+}
+pre{
+    font-size: large;
+    height:10px;
+    
+}
+
+
+
+
+
+
