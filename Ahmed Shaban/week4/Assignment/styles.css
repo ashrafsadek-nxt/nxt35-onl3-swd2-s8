@@ -1,0 +1,29 @@
+body{
+   height: 4000px;
+
+}
+html {
+    scroll-behavior: smooth; 
+  }
+
+#nr{
+    border-radius:50%;
+    position: fixed;
+    bottom: 20px;
+    right: 20px ;
+    
+}
+#nr:hover{
+    filter: brightness(.5);
+}
+
+#img{
+   border-radius: 10%;
+}
+#srch{
+position:absolute;
+    top:90px;
+    right: 20px ;
+    
+
+}
