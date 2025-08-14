@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name=" viewport" content="with= device- with , inital- scale=1.0  ">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="">
+    <title>Form</title>
+</head>
+
+<body>
+    <form action="index.html" method="get">
+        <div>
+            <p>What is your name?</p>
+            <input type="text" name="username" placeholder="Enter your name ..." autofocus>
+        </div>
+        <div>
+            What is your Gender?
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="male">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="female">
+        </div>
+        <div>
+            <p>What is your favourite sport?</p>
+            <label for="fb">Football</label>
+            <input type="checkbox" name="sport" id="fb" value="football">
+            <label for="hb">Handball</label>
+            <input type="checkbox" name="sport" id="hb" value="handball">
+            <label for="bb">Basketball</label>
+            <input type="checkbox" name="sport" id="bb" value="basketball">
+        </div>
+        <div>
+            <p>What is your age?</p>
+            <input type="number" name="userAge" min="1" max="100">
+        </div>
+        <div>
+            <label>What is your Birthdate</label>
+            <input type="date" name="birthdate">
+        </div>
+        <div>
+            <label>week</label>
+            <input type="week" name="week">
+        </div>
+        <div>
+            <label>month</label>
+            <input type="month" name="month">
+        </div>
+        <div>
+            <label>Time</label>
+            <input type="time" name="time">
+        </div>
+        <div>
+            <label>Your LinkedIn account</label>
+            <input type="url" name="website" required>
+        </div>
+        <div>
+            <label>Your Email</label>
+            <input type="email" name="email">
+        </div>
+        <div>
+            <label for="pwd">Password</label>
+            <input type="password" name="pwd" id="pwd" autocomplete="on">
+        </div>
+        <div>
+            <label>What is your favourite color?</label>
+            <input type="color" name="color">
+        </div>
+        <div>
+            <label>Rate Us</label>
+            <input type="range" name="rating" min="1" max="5">
+        </div>
+        <div>
+            <label>Upload your CV.</label>
+            <input type="file" name="file" required>
+        </div>
+        <div>
+            <input type="search" name="search">
+        </div>
+        <div>
+            <textarea name="feedback" title="search" cols="15" rows="5" minlength="10" maxlength="15"
+                placeholder="search ..."></textarea>
+        </div>
+        <div>
+            <label>Select yoyur City</label>
+            <select name="city">
+                <option selected disabled>Choose city</option>
+                <option value="ca">Cairo</option>
+                <option value="gi">Giza</option>
+                <option value="ta">Tanta</option>
+                <option value="fa">Fayoum</option>
+                <option value="alx">Alex</option>
+                <option value="lu">Luxor</option>
+                <option value="as">Aswan</option>
+            </select>
+        </div>
+        <div>
+            <input type="reset" value="Delete">
+            <input type="submit" value="Save">
+        </div>
+    </form>
+</body>
+
+</html>
