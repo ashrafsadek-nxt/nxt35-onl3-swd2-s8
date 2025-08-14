@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* top-bar */
+.top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #f3f3f3;
+    color: #333;
+    font-size: 14px;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+}
+
+
+.top-bar .ad-btn {
+    background-color: red;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+/* nav-bar */
+.nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #222;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px 0;
+}
+
+.nav-bar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.nav-bar a:hover {
+    color: #ffcc00;
+}
+
+.scroll-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: white;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.scroll-top :hover {
+    color: #ffcc00;
+}
+
+.art {
+    /* display: inline-block; */
+    width: 21%;
+    padding: 10px;
+    border: 2px solid lightgray;
+    border-radius: 10px;
+    margin-left: 8px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    bottom: 10px;
+}
+
+.art:hover {
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.7);
+}
+
+.art .artImg {
+    width: 100%;
+    height: 20vh;
+    border: none;
+    border-radius: 10px;
+}
+
+.art .artdData {
+    font-size: 14px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: right;
+}
+
+.art-head {
+    color: red;
+    direction: rtl;
+    text-align: right;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.art .artReadBtn {
+    background-color: rgba(32, 32, 183, 0.8);
+    padding: 7px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    float: right;
+}
+
+.art .artReadBtn:hover {
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+    color: aqua;
+}
