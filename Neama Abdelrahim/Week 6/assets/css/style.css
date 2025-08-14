@@ -1,0 +1,50 @@
+.grade-A {
+    background-color: lightgreen;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.grade-B {
+    background-color: lightblue;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.grade-C {
+    background-color: khaki;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.grade-D {
+    background-color: orange;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.grade-F {
+    background-color: tomato;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5;
+}
+
+h2,
+h3 {
+    color: #333;
+}
+
+input,
+button {
+    padding: 8px;
+    margin: 5px 0;
+}
