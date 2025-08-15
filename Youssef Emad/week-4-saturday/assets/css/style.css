@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white; 
+    z-index: 1000; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+    padding: 10px 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease; 
+}
+.first {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.nav-links li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+.nav-links li a:hover {
+    text-decoration: underline;
+}
+.search-form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+    .search-icon {
+    width: 30px;
+    height: auto;
+}
+main {
+    padding-top: 120px;
+}
+footer .image img {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    transition: 0.3;
+}
+
