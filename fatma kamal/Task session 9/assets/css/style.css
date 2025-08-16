@@ -1,0 +1,27 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#im{
+    height: 70px;
+    width: 70px;
+}
+#dv1{
+    border-bottom: 2px solid;
+    background-color: rgb(125, 125, 150);
+    width: 100%;
+    position: fixed;
+    top: 0px
+
+}
+.search{
+    float: right;
+    margin-top: 20px;
+    margin-right: 5px;
+}
+.dv2{
+    margin-top: 100px; 
+    
+}
+

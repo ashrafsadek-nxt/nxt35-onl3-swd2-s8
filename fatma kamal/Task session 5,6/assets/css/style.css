@@ -1,0 +1,31 @@
+p,pre {
+    color: #474d44;
+    direction: ltr;
+    opacity: 1;
+    line-height: 25px;
+    letter-spacing: 21px;
+    word-spacing: 30px;
+    word-break: break-all;
+    word-wrap: break-word;
+    font-size: xx-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: lowercase;
+    text-shadow: 5px 7px 6px gray;
+    text-align: left;
+
+}
+
+span{
+    color: red;
+}
+
+div{
+    color: yellow;
+    font-size: x-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-style: italic;
+}
