@@ -1,0 +1,71 @@
+ body {
+     font-family: system-ui, Arial;
+     background: #f7f7f8;
+     margin: 0;
+     padding: 24px;
+ }
+
+ h1 {
+     margin: 0 0 16px;
+ }
+
+ .wrap {
+     display: grid;
+     gap: 12px;
+     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+ }
+
+ .card {
+     padding: 14px 16px;
+     border-radius: 14px;
+     background: white;
+     box-shadow: 0 2px 8px rgba(0, 0, 0, .06);
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     border: 1px solid rgba(0, 0, 0, .06);
+ }
+
+ .name {
+     font-weight: 600;
+ }
+
+ .score {
+     opacity: .7;
+     font-size: .9rem;
+ }
+
+ .badge {
+     font-weight: 700;
+     padding: 6px 10px;
+     border-radius: 999px;
+     min-width: 40px;
+     text-align: center;
+     color: #111;
+     background: #eee;
+     border: 1px solid rgba(0, 0, 0, .08);
+ }
+
+ .grade-B {
+     background: #dbeafe;
+     border-color: #93c5fd;
+     color: #1e3a8a;
+ }
+
+ .grade-C {
+     background: #ffe8cc;
+     border-color: #ffcc99;
+     color: #7c3a00;
+ }
+
+ .grade-D {
+     background: #fff6bf;
+     border-color: #ffe066;
+     color: #7a5d00;
+ }
+
+ .grade-F {
+     background: #ffd6d6;
+     border-color: #ff9aa2;
+     color: #7f1d1d;
+ }
