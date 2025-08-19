@@ -1,0 +1,121 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f5f6f8;
+  margin: 0;
+  color: #333;
+}
+
+header {
+  padding: 20px;
+  text-align: center;
+  background: #2c3e50;
+  color: #fff;
+}
+
+.inputs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+input,
+button {
+  padding: 10px 12px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background: #2c3e50;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #1f2a38;
+}
+
+.student-card {
+  width: 75%;
+  max-width: 700px;
+  margin: 15px auto;
+  display: flex;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.student-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.student-info {
+  flex: 2;
+  background: #fff;
+  padding: 20px;
+}
+
+.student-info h2 {
+  margin-bottom: 10px;
+}
+
+.subjects-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.subject-box {
+  flex: 1 1 30%;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.subject-box:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.subject-A {
+  background: #2ecc71;
+}
+.subject-B {
+  background: #3498db;
+}
+.subject-C {
+  background: #f1c40f;
+  color: #000;
+}
+.subject-D {
+  background: #e67e22;
+}
+.subject-E {
+  background: #9b59b6;
+}
+.subject-F {
+  background: #e74c3c;
+}
+
+.student-grade {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 0 15px 15px 0;
+  transition: background 0.3s;
+}
