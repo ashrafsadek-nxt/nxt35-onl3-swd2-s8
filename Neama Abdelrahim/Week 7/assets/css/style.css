@@ -1,0 +1,186 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    padding-top: 100px;
+    /* عشان البار المثبت */
+}
+
+/* top-bar */
+.top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #f3f3f3;
+    color: #333;
+    font-size: 14px;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+}
+
+.top-bar .ad-btn {
+    background-color: red;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+/* nav-bar */
+.nav-bar {
+    /* position: fixed; */
+    top: 45px;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: #222;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px 0;
+    transition: all 0.3s ease;
+}
+
+.nav-bar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.nav-bar a:hover {
+    color: #ffcc00;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+    margin-left: 15px;
+}
+
+@media (max-width: 768px) {
+    .nav-bar {
+        flex-direction: column;
+        display: none;
+    }
+
+    .nav-bar.show {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+        position: fixed;
+        top: 50px;
+        right: 20px;
+        z-index: 1001;
+    }
+}
+
+.scroll-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: white;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    font-size: 24px;
+    text-decoration: none;
+    display: none;
+}
+
+.scroll-top:hover {
+    color: #ffcc00;
+}
+
+.art {
+    width: 21%;
+    padding: 10px;
+    border: 2px solid lightgray;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    display: inline-block;
+    vertical-align: top;
+}
+
+.art:hover {
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.7);
+}
+
+.art .artImg {
+    width: 100%;
+    height: 20vh;
+    border-radius: 10px;
+}
+
+.art .artdData {
+    font-size: 14px;
+    text-align: right;
+}
+
+.art-head {
+    color: red;
+    font-weight: bold;
+}
+
+.art .artReadBtn {
+    background-color: rgba(32, 32, 183, 0.8);
+    padding: 7px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    float: right;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.art .artReadBtn:hover {
+    transform: scale(1.1);
+    color: aqua;
+}
+
+/* contact form */
+.contact {
+    margin: 30px;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    width: 50%;
+}
+
+.contact input,
+.contact textarea,
+.contact button {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+}
+
+.contact button {
+    background: #333;
+    color: white;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background: darkred;
+}
