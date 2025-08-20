@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Projects</title>
+</head>
+<body>
+    <h1>My Projects</h1>
+    <hr>
+    <div>
+        <h2>Java Quiz Game Timer Scoreboard</h2>
+        <p>A quiz game built with Java and Swing. Features timed questions, animated score counter, and custom sound effects for correct and incorrect answers.</p>
+        <div class="imgs slider" class="">
+            <img src="/assets/images/458860204-77d97f18-9564-44ce-9893-b90cdfaec931.png" alt="">
+            <img src="/assets/images/458860647-1be8ba3e-9eb7-42a2-a935-a8a97f6583f0.png" alt="">
+            <img src="/assets/images/458860761-9882c738-9d89-4154-a8d7-b953c5973b58.png" alt="">
+        </div>
+        <style>
+            .slider { width: 400px; overflow: hidden; }
+            .slider img { width: 100%; display: none; }
+            .slider img.active { display: block; }
+        </style>
+        <script>
+            const slides = document.querySelectorAll(".slider img");
+            let current = 0;
+            setInterval(() => {
+                slides[current].classList.remove("active");
+                current = (current + 1) % slides.length;
+                slides[current].classList.add("active");
+            }, 2000);
+</script>
+        <hr>
+    </div>
+        <div>
+        <h2>2D spongepob theme Shooter Game</h2>
+        <p>A 2D shooter game built with C++ and OpenGL GLUT. Features include character control, collision detection, score tracking, power ups.</p>
+        <div class="imgs">
+            <img src="/assets/images/458850214-69c2b83e-63e3-47fb-8ef2-1d70cf57d598.png" alt="">
+        </div>
+    </div>
+</body>
+</html>
+<style>
+    .imgs img{
+        width: 400px;
+        height: auto;
+    }
+</style>
