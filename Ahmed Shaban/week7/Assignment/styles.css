@@ -1,0 +1,143 @@
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: #333;
+    color: #fff;
+    position: relative;
+    z-index: 1000;
+
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin: 0 10px;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+  
+  }
+  
+  .nav-links a:hover {
+    color: #f39c12;
+  }
+  
+  .menu-toggle {
+    display: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      background: #444;
+      position: absolute;
+      top: 60px;
+      right: 10px;
+      width: 200px;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .menu-toggle {
+      display: block;
+    }
+  }
+  
+  .section {
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .home {
+    background: #f4f4f4;
+  }
+  
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
+  }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .profile-img {
+    width: 150px;
+    border-radius: 50%;
+    margin: 20px 0;
+    transition: transform 0.3s;
+  }
+  
+  .profile-img:hover {
+    transform: scale(1.1);
+  }
+  
+  .project-card {
+    display: inline-block;
+    background: #eee;
+    margin: 15px;
+    padding: 20px;
+    transition: transform 0.3s, background 0.3s;
+  }
+  
+  .project-card:hover {
+    transform: scale(1.05);
+    background: #ddd;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+  }
+  
+  form input, form textarea, form button {
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 1rem;
+  }
+  
+  form button {
+    background: #333;
+    color: #fff;
+    border: none;
+    transition: background 0.3s;
+  }
+  
+  form button:hover {
+    background: #f39c12;
+  }
+  
