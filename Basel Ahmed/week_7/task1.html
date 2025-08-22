@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 3</title>
+  <link rel="stylesheet" href="assests/css/task1.css">
+</head>
+<body>
+
+  <header>
+    <span class="menu-toggle">☰</span>
+    <nav>
+      <ul id="menu">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <section class="hero" id="hero">
+    <h1>Welcome to My Website</h1>
+    <p>This is an interactive frontend assignment</p>
+    <button id="heroBtn">Click Me!</button>
+    <p id="heroMsg"></p>
+  </section>
+
+
+  <section id="portfolio">
+    <h2 style="text-align:center;">My Portfolio</h2>
+    <div class="slider">
+      <div class="slides" id="slides">
+        <img src="assests/img/Screenshot 2025-08-16 170938.png" alt="Project 1">
+        <img src="assests/img/Screenshot 2025-08-16 171001.png" alt="Project 2">
+        <img src="assests/img/Screenshot 2025-08-16 171014.png" alt="Project 3">
+      </div>
+    </div>
+  </section>
+
+
+  <section class="contact" id="contact">
+    <h2 style="text-align:center;">Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p id="formMsg" style="text-align:center; color:green;"></p>
+  </section>
+
+
+<script src="assests/js/task1.js"></script>
+</body>
+</html>
