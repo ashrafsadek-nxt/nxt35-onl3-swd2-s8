@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <title>Contact</title>
+    </head>
+    <body>
+        <section>
+        <a href="assignment2.html" style="background-color: rgb(132, 4, 72);color:white;padding: 5px 10px; border: none; border-radius: 5px; cursor: pointer;">Home</a>
+        <a href="applynow.html" style="background-color: rgb(132, 4, 72);color:white;padding: 5px 10px; border: none; border-radius: 5px; cursor: pointer;">Apply Now</a>
+        <a href="task.html" style="background-color: rgb(132, 4, 72);color:white;padding: 5px 10px; border: none; border-radius: 5px; cursor: pointer;">Task1</a>
+        <h1>Apply Now</h1>
+            <hr>
+        </section>
+       <form action="">
+       <div>
+            <label for="name">Name:</label>
+            <input type="text" name="name" placeholder="Enter Your Name" required id ="name">
+            <p></p>
+       </div>
+       <div>
+            <label for="pass">Password:</label>
+            <input type="password" name="Password" placeholder="Enter Password" required id ="pass">
+            <p></p>
+       </div>
+
+       <div>
+        <strong><u>Gender</u>:</strong>      
+            <label for="male">Male:</label>
+            <input type="radio" name="Gender"  id ="male">
+            <label for="female">Female:</label>
+            <input type="radio" name="Gender"  id ="female">
+            <p></p>
+         
+       </div>
+       <div>
+            <label for="email">Email:</label>
+            <input type="email" name="" placeholder="name@example.com" required id ="email">
+            <p></p>
+       </div>
+       <div>
+            <label for="phone">Phone:</label>
+            <input type="text" name="" placeholder="+(20)" id ="" list="country" minlength="1" maxlength="4" style="width: 50px;" required>
+            <datalist id="country">
+                <option value="+20">Egypt
+                <option value="+1">USA
+                <option value="+44">UK
+            </datalist>
+            <input type="tel" name="" placeholder="100-100-100" required id ="phone" maxlength="10" pattern="{1-14}">
+            <p></p>
+        </div>
+        <div>
+            <label for="birth">Birthdate:</label>
+            <input type="date" name=""  required id ="birth">
+            <p></p>
+        </div>
+        <div>
+            <label for="file">Upload Your CV</label>
+            <input type="file" name="" id="file" accept=".jpg, .jpeg, .png, .gif, .pdf, .doc, .docx" required>
+            <p></p>      
+        </div>
+       <div>
+        <input type="submit" value="Submit" style="background-color: rgb(48, 199, 103);color:white; padding: 10px 10px; border: none; border-radius: 5px; cursor: pointer;">
+        <input type="reset" value="Reset" style="background-color: rgb(199, 48, 48);color:white; padding: 10px 10px; border: none; border-radius: 5px; cursor: pointer;">
+       </div>
+       </form>
+    </body>
+</html>
