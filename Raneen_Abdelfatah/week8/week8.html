@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/week8.css">
+    <title>Document</title>
+</head>
+<body>
+<nav class="navbar">
+  <div class="logo">Reno</div>
+  <button class="menu-toggle">☰</button>
+  <ul class="nav-links">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Portfolio</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+<!-- HTML -->
+<div class="slider">
+  <img src="./images/I’ve Always Wanted To Publish a Novel—Here’s How I Finally Did It.jpg" class="slide active">
+  <img src="./images/1435bf89-f499-42bf-9742-1c4c912ce446.jpg" class="slide">
+  <img src="./images/9912943a-10cd-430a-8ae1-6882633e0d00.jpg" class="slide">
+  <button class="prev">◀</button>
+  <button class="next">▶</button>
+</div>
+
+<form id="contactForm">
+  <input type="text" id="name" placeholder="Your Name" required>
+  <input type="email" id="email" placeholder="Your Email" required>
+  <textarea id="message" placeholder="Your Message" required></textarea>
+  <button type="submit">Send</button>
+</form>
+<p id="formMsg"></p>
+
+<script src="./js/week8.js"></script>
+</body>
+</html>
