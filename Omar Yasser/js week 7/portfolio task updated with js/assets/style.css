@@ -1,0 +1,252 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #111;
+  color: #e0e0e0;
+  line-height: 1.6;
+}
+
+/* NAVBAR */
+header {
+  background: #1c1c1c;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.6);
+  padding: 15px 40px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  font-size: 26px;
+  font-weight: bold;
+  color: #00aaff;
+  text-decoration: none;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #e0e0e0;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #00aaff;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #1c1c1c;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    padding: 15px;
+    border-radius: 8px;
+  }
+  .nav-links.active {
+    display: flex;
+  }
+  .menu-toggle {
+    display: block;
+  }
+}
+
+/* ABOUT */
+.about {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.about h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.about-container img {
+  width: 280px;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.about-container img:hover {
+  transform: scale(1.05);
+}
+
+.about-container p {
+  max-width: 600px;
+  font-size: 18px;
+  color: #ccc;
+}
+
+/* PROFESSIONS */
+.professions {
+  padding: 60px 40px;
+  text-align: center;
+  background: #1c1c1c;
+}
+
+.professions h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #222;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.8);
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  color: #00aaff;
+}
+
+/* Remove bullet points */
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* SLIDER */
+.slider {
+  position: relative;
+  width: 80%;
+  margin: 30px auto;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.8);
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+  background: #000;
+  text-align: center;
+}
+
+.slide img,
+.slide video {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.slider button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.6);
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+/* CONTACT */
+.contact {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.contact h1 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.contact form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact input,
+.contact textarea {
+  padding: 12px;
+  border: 1px solid #333;
+  border-radius: 8px;
+  font-size: 16px;
+  background: #1c1c1c;
+  color: #e0e0e0;
+}
+
+.contact button {
+  padding: 12px;
+  border: none;
+  background: #00aaff;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact button:hover {
+  background: #0088cc;
+}
+
+/* FOOTER */
+footer {
+  padding: 20px;
+  text-align: center;
+  background: #1c1c1c;
+  margin-top: 40px;
+  color: #aaa;
+}
