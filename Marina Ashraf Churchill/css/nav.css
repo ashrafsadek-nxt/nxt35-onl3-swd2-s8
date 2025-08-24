@@ -1,0 +1,107 @@
+
+
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+  direction: rtl; /* يجعل النصوص تبدأ من اليمين */
+  text-align: right; /* يضبط المحاذاة إلى اليمين */
+}
+.heading{
+position: relative;
+top:1rem
+}
+
+.heading span{
+    color: red;
+}
+
+.main-head-box{
+display: flex;
+justify-content: space-evenly;
+
+}
+.main-head-box h1{
+    font-size: 2rem;
+    font-weight: bolder;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+.main-head-box  h4{
+    
+    padding: .5rem;
+   
+}
+.main-head-box .first h4
+{
+color: red;
+}
+.main-head-box div i{
+padding: .3rem;
+margin: .5rem;
+}
+.main-head-box div .fa-bullhorn{
+transform: scaleX(-1); /* يعكس الأيقونة أفقيًا */
+background: red;
+color: white;
+border-radius: 50%;
+padding-left: .5rem;
+ 
+}
+
+.second h4{
+    display: inline-block;
+}
+
+/* 
+
+*/
+nav{
+    background: black;
+    width: 100%;
+     text-align: center;
+}
+ul{
+display: inline-block
+}
+li{
+    display: inline-block;
+   list-style: none;
+   padding: .8rem;
+  
+}
+a{
+    
+    color: white;
+    text-decoration: none;
+    padding: .5rem;
+}
+a:hover{
+    color: red;
+}
+
+.links{
+    position: absolute;
+    top: 30%;
+    bottom: 0%;
+    text-align: center;
+   display: flex;
+   flex-direction: column;
+/* justify-content: ; */
+align-items: center;
+
+}
+.links p{
+    line-height: 1.2;
+}
+.links a{
+    display: block;
+    color: black;
+    background-color: red;
+    width: 20px;
+    height: 15px;
+    border-radius: 50%;
+margin: 8rem 2rem;
+}
