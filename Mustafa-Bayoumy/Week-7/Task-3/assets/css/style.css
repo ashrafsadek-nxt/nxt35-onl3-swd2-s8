@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navbar
+{
+  display: flex;
+  justify-content: space-between;
+  background: #333;
+  color: white;
+  padding: 10px 20px;
+  align-items: center;
+}
+.nav-links
+{
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.nav-links li a
+{
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.nav-links li a:hover
+{
+  color: #00ccff;
+}
+.menu-toggle
+{
+  display: none;
+  background: none;
+  font-size: 24px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.hero
+{
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  color: white;
+}
+#learnMoreBtn
+{
+  padding: 10px 20px;
+  background: white;
+  color: #0072ff;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: transform 0.3s;
+}
+#learnMoreBtn:hover
+{
+  transform: scale(1.1);
+}
+.features
+{
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 20px;
+  background: #f4f4f4;
+}
+.feature-box
+{
+  background: #0072ff;
+  color: white;
+  padding: 30px;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+.feature-box:hover
+{
+  transform: translateY(-10px);
+}
+.contact
+{
+  padding: 50px 20px;
+  text-align: center;
+}
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+.contact input,
+.contact textarea
+{
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.contact button
+{
+  padding: 10px;
+  background: #0072ff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+@media (max-width: 768px)
+{
+  .nav-links
+  {
+    flex-direction: column;
+    display: none;
+    background: #333;
+    position: absolute;
+    right: 0;
+    top: 50px;
+    width: 100%;
+    text-align: center;
+  }
+  .nav-links.active
+  {
+    display: flex;
+  }
+  .menu-toggle
+  {
+    display: block;
+  }
+}
