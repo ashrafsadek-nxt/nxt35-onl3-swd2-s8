@@ -1,0 +1,49 @@
+.card img {
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.slider-container {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.carousel-item img {
+  width: 100%;
+  max-height: 400px;
+  height: auto;
+  object-fit: contain;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background: none;
+  border: none;
+  filter: invert(100%);
+}
+footer
+{
+  background-color: #f8f9fa;
+  padding: 10px;
+}
+.footer-icons
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-icons a
+{
+  margin: 0 15px;
+  font-size: 18px;
+}
+.footer-icons a img
+{
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+.list-group-item
+{
+  text-align: center;
+}

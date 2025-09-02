@@ -1,0 +1,24 @@
+:root
+{
+  --bs-primary: #ff6f61; /* coral */
+  --bs-body-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body
+{
+  font-family: var(--bs-body-font-family);
+  line-height: 1.6;
+}
+.custom-btn
+{
+  background-color: #ff6f61;
+  border-color: #ff6f61;
+}
+.custom-btn:hover
+{
+  background-color: #e65b50;
+  border-color: #e65b50;
+}
+.bg-custom
+{
+  background-color: #343a40;
+}

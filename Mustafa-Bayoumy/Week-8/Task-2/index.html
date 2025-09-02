@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="keywords" content="">
+  <title>Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-custom">
+    <div class="container">
+      <a class="navbar-brand" href="#">RePack</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#mainNav"
+        aria-controls="mainNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <header class="container py-5">
+    <div class="row align-items-center">
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        <h1 class="display-4">Welcome to my website</h1>
+        <p class="lead">using Bootstrap grid system and components to enhance my development workflow.</p>
+        <a href="#contact" class="btn btn-lg custom-btn">Get Started</a>
+      </div>
+    </div>
+  </header>
+  <section id="features" class="bg-light py-5">
+    <div class="container">
+      <h2 class="mb-4 text-center">Key Components</h2>
+      <div class="row g-4">
+        <div class="col-sm-6 col-md-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Buttons</h5>
+              <p class="card-text">Multiple styles and sizes to match your design.</p>
+              <a href="#" class="btn btn-sm btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Forms</h5>
+              <p class="card-text"> Responsive form controls and validation styles.</p>
+              <a href="#" class="btn btn-sm btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Navbar</h5>
+              <p class="card-text">Build responsive navigation with minimal markup.</p>
+              <a href="#" class="btn btn-sm btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact" class="container py-5">
+    <h2 class="mb-4 text-center">Contact Us</h2>
+    <form id="contactForm" class="mx-auto" style="max-width: 600px;">
+      <div id="alertPlaceholder"></div>
+      <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input
+          type="text"
+          id="name"
+          class="form-control"
+          placeholder="Your Name"
+          required/>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input
+          type="email"
+          id="email"
+          class="form-control"
+          placeholder="you@example.com"
+          required/>
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">Message</label>
+        <textarea
+          id="message"
+          class="form-control"
+          rows="4"
+          placeholder="Your message..."
+          required></textarea>
+      </div>
+      <button type="submit" class="btn custom-btn w-100">Send Message</button>
+    </form>
+  </section>
+  <footer class="bg-dark text-light text-center py-3">
+    &copy; 2025 RePack. All rights reserved.
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/test.js"></script>
+</body>
+</html>
