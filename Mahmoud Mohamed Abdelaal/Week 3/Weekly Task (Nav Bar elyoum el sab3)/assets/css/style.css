@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.top-bar {
+  background: #ffffff;
+  padding: 5px;
+  text-align: center;
+  font-size: 19px;
+}
+.top-bar .date {
+  color: #000000;
+  margin-left: 10px;
+  font-size: medium;
+  font-weight: bold;
+}
+
+
+.navbar {
+  background: #222;
+  padding: 10px;
+  text-align: center;
+  
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navbar li {
+  display: inline;
+  margin-left: 10px;
+}
+
+.navbar a {
+  color: rgb(248, 248, 248);
+  text-decoration: none;
+  font-size: 14px;
+  text-align: center;
+  font-weight: bold;
+}
