@@ -1,0 +1,35 @@
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .main {
+      display: flex;
+    }
+
+    .sidebar {
+      min-height: 100vh;
+      width: 250px;
+      background-color: #0d6efd;
+      padding-top: 20px;
+    }
+
+    .sidebar a {
+      color: #fff;
+      padding: 10px 15px;
+      display: block;
+      text-decoration: none;
+    }
+
+    .sidebar a:hover {
+      background-color: #0b5ed7;
+    }
+
+    .content {
+      flex: 1;
+      padding: 20px;
+    }
+   .carousel img {
+      max-width: 100%;
+      height: 600px;
+    }
