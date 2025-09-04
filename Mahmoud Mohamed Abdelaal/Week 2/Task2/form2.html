@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name=" viewport" content="with= device- with , inital- scale=1.0  ">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="">
+    <title>Form</title>
+</head>
+<center>
+<body>
+    <form action="index.html" method="get">
+        <div>
+            <p>What is your name?</p>
+            <input type="text" name="username" placeholder="Enter your name ...." >
+        </div>
+        <br>
+
+        <div>
+             <p style="display: inline;">Gender:</p> 
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="male">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="female">
+        </div>
+        <br>
+
+        <div>
+        <p style="display:inline;">What is your age?</p>
+        <input type="number" name="userAge" min="1" max="100000000" placeholder="Enter your age">
+        </div>
+
+        <br>
+        
+        <div>
+            <label>What is your Birthdate</label>
+            <input type="date" name="birthdate">
+        </div>
+        <br>
+        <div>
+            <label>Your LinkedIn account</label>
+            <input type="url" name="website" required>
+        </div>
+        <br>
+        <div>
+            <label>Your Email</label>
+            <input type="email" name="email">
+        </div>
+        <br>
+<div>
+            <label>Select City</label>
+            <select name="city">
+                <option selected disabled>Choose city</option>
+                <option value="Cairo">Cairo</option>
+                <option value="Giza">Giza</option>
+                <option value="Alexandria">Alexandria</option>
+                <option value="Mansoura">Mansoura</option>
+                <option value="Tanta">Tanta</option>
+                <option value="Aswan">Aswan</option>
+                <option value="Luxor">Luxor</option>
+            </select>
+        </div>
+
+        <div>
+            <p>What do you need me for ?</p>
+            <textarea name="What do u want ?" title="text" cols="15" rows="5" minlength="10" maxlength="15"
+                placeholder="...."></textarea>
+        </div>
+        
+        <br>
+        <div>
+            <input type="submit" value="Send">
+            
+            <button>
+                <a href="index.html">Back</a>
+            </button>
+        </div>
+    </form>
+       
+</body>
+
+</center>
+</html>
