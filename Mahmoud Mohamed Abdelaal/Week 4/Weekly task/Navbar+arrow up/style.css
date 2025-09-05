@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  scroll-behavior: smooth;
+  background-color: #fafafa;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 65px;
+  background: linear-gradient(to right, #dfe9f3, #ffffff);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 20px;
+}
+
+.nav-list li {
+  padding: 5px 10px;
+  border-radius: 6px;
+  transition: background 0.3s;
+  cursor: default;
+}
+
+.nav-list li:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Search box */
+.search-form input {
+  padding: 8px 12px;
+  border: 1px solid #bbb;
+  border-radius: 20px;
+  outline: none;
+  transition: border 0.3s;
+}
+
+.search-form input:focus {
+  border-color: #007acc;
+}
+
+/* Content */
+.content {
+  padding-top: 90px;
+  padding: 20px;
+  height: 2000px;
+  background: white;
+}
+
+/* Scroll-to-top Button */
+.scroll-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #000000;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 50%;
+  font-size: 18px;
+  text-align: center;
+  transition: background 0.3s;
+}
+
+.scroll-top:hover {
+  background: #f0f0f0;
+  color: black;
+}
