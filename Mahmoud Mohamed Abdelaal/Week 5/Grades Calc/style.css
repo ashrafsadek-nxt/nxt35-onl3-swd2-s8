@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #1a2a6c ,white);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.container {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  width: 320px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+input {
+  width: 90%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  background: #ffcc00;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #ffaa00;
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 22px;
+  font-weight: bold;
+  padding: 15px;
+  border-radius: 12px;
+}
+
+/* Grade colors */
+.grade-a {
+  background: #00c853;
+}
+.grade-b {
+  background: #64dd17;
+}
+.grade-c {
+  background: #ffd600;
+}
+.grade-d {
+  background: #ff6d00;
+}
+.grade-f {
+  background: #d50000;
+}
