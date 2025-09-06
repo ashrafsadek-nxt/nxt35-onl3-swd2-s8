@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Raneen — Portfolio</title>
+  <meta name="description" content="Portfolio of Raneen — Front-end developer. Projects, skills, and contact." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Accessibility: Skip link -->
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="logo" href="#home" aria-label="Go to homepage">
+        <span aria-hidden="true">👋</span> Raneen
+      </a>
+
+      <!-- Mobile Nav Toggle -->
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" role="navigation" aria-label="Primary">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <!-- Hero -->
+    <section id="home" class="section hero" aria-label="Hero">
+      <div class="container grid-2">
+        <div class="hero-text">
+          <h1>Front‑End Developer</h1>
+          <p>
+            I build clean, accessible, and responsive web experiences.
+            This portfolio showcases my skills, selected projects, and how to reach me.
+          </p>
+          <div class="hero-cta">
+            <a href="#projects" class="btn">View Projects</a>
+            <a href="#contact" class="btn btn-secondary">Contact Me</a>
+          </div>
+        </div>
+        <figure class="hero-figure">
+          <!-- <img src="https://picsum.photos/seed/desk/640/480" alt="Laptop on desk with code on the screen" /> -->
+        </figure>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section" aria-label="About me">
+      <div class="container grid-2">
+        <figure class="profile">
+        </figure>
+        <div>
+          <h2>About Me</h2>
+          <p>
+            Hi! I'm <strong>Raneen</strong>, a front‑end developer who loves crafting
+            delightful user interfaces. I'm passionate about responsive design, performance,
+            and accessibility.
+          </p>
+          <p>
+            I'm comfortable with HTML, CSS, JavaScript, and modern tooling.
+            I enjoy turning designs into real products and iterating with users.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section alt" aria-label="Skills">
+      <div class="container">
+        <h2>Skills</h2>
+        <ul class="chip-list" role="list">
+          <li class="chip">HTML5</li>
+          <li class="chip">CSS3</li>
+          <li class="chip">JavaScript</li>
+          <li class="chip">Bootstrap</li>
+          <li class="chip">Git & GitHub</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="projects" class="section" aria-label="Projects">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="cards">
+          <article class="card reveal">
+            <div class="card-body">
+              <h3>Project One</h3>
+              <p>
+              </p>
+              <a class="btn btn-small" href="#" aria-label="Open Project One live demo">Live Demo</a>
+              <a class="btn btn-small btn-secondary" href="#" aria-label="Open Project One repository">Source</a>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-body">
+              <h3>Project Two</h3>
+              <p>
+              </p>
+              <a class="btn btn-small" href="#" aria-label="Open Project Two live demo">Live Demo</a>
+              <a class="btn btn-small btn-secondary" href="#" aria-label="Open Project Two repository">Source</a>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-body">
+              <h3>Project Three</h3>
+              <p>
+              </p>
+              <a class="btn btn-small" href="#" aria-label="Open Project Three live demo">Live Demo</a>
+              <a class="btn btn-small btn-secondary" href="#" aria-label="Open Project Three repository">Source</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section alt" aria-label="Contact">
+      <div class="container narrow">
+        <h2>Contact</h2>
+        <p>Want to work together? Send me a message:</p>
+        <form id="contact-form" novalidate>
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required aria-required="true" />
+            <small class="error" id="name-error" role="alert" aria-live="polite"></small>
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required aria-required="true" />
+            <small class="error" id="email-error" role="alert" aria-live="polite"></small>
+          </div>
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+            <small class="error" id="message-error" role="alert" aria-live="polite"></small>
+          </div>
+          <button type="submit" class="btn">Send</button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Raneen. All rights reserved.</p>
+      <nav aria-label="Footer">
+        <ul class="footer-links">
+          <li><a href="bootstrap.html">Bootstrap Version</a></li>
+          <li><a href="#home">Back to top</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
