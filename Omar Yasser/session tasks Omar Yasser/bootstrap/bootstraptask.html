@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Styled Layout</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <style>
+      body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background: #f4f6fa;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        color: #2b2b2b;
+      }
+      main {
+        flex: 1;
+      }
+
+      /* Navbar */
+      .navbar {
+        background: linear-gradient(90deg, #4a148c, #009688);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+      }
+      .navbar-brand {
+        font-weight: bold;
+        font-size: 1.3rem;
+      }
+      .nav-link {
+        position: relative;
+        font-weight: 500;
+        color: #eee !important;
+      }
+      .nav-link:hover {
+        color: #fff !important;
+      }
+      .nav-link::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: -3px;
+        left: 0;
+        background-color: #fff;
+        transition: width 0.3s ease;
+      }
+      .nav-link:hover::after {
+        width: 100%;
+      }
+
+      /* Carousel */
+      .carousel-item {
+        height: 320px;
+      }
+      .carousel-caption {
+        background: rgba(0, 0, 0, 0.55);
+        border-radius: 12px;
+        padding: 15px 25px;
+      }
+      .carousel-caption h2 {
+        font-size: 1.8rem;
+        font-weight: bold;
+      }
+
+      /* Section Title */
+      .section-title {
+        font-weight: 700;
+        color: #4a148c;
+        margin-bottom: 1rem;
+        position: relative;
+      }
+      .section-title:after {
+        content: "";
+        position: absolute;
+        bottom: -6px;
+        left: 0;
+        width: 50px;
+        height: 3px;
+        background: #009688;
+        border-radius: 2px;
+      }
+
+      /* Quick Links */
+      .link-item {
+        display: flex;
+        align-items: center;
+        padding: 12px 15px;
+        margin-bottom: 12px;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+        text-decoration: none;
+        color: #444;
+        font-weight: 500;
+        transition: all 0.3s ease;
+      }
+      .link-item:hover {
+        background: #f0f7ff;
+        color: #4a148c;
+        transform: translateX(6px);
+      }
+      .link-number {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 28px;
+        height: 28px;
+        background: #009688;
+        color: white;
+        border-radius: 50%;
+        margin-right: 12px;
+        font-size: 0.9rem;
+        font-weight: bold;
+      }
+
+      /* Cards */
+      .card {
+        border: none;
+        border-radius: 14px;
+        overflow: hidden;
+        background: #fff;
+        box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 12px 22px rgba(0, 0, 0, 0.15);
+      }
+      .card-title {
+        color: #4a148c;
+        font-weight: 600;
+      }
+      .btn-outline-primary {
+        border-radius: 30px;
+        border-color: #009688;
+        color: #009688;
+      }
+      .btn-outline-primary:hover {
+        background: #009688;
+        color: #fff;
+      }
+
+      /* Features Section */
+      .circle-btn {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 22px;
+        margin: 10px auto;
+        background: #4a148c;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      }
+      .circle-btn i {
+        color: #fff;
+      }
+
+      /* Footer */
+      footer {
+        background: linear-gradient(90deg, #009688, #4a148c);
+      }
+      footer .circle-btn {
+        background: rgba(255, 255, 255, 0.15);
+        transition: background 0.3s;
+      }
+      footer .circle-btn:hover {
+        background: rgba(255, 255, 255, 0.3);
+      }
+      footer p {
+        margin-top: 10px;
+        font-size: 0.9rem;
+        color: #f0f0f0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#"><i class="bi bi-stars me-2"></i>My Website</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <!-- Carousel -->
+      <div id="carouselExampleCaptions" class="carousel slide mb-4" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="d-flex justify-content-center align-items-center bg-primary bg-gradient" style="height: 320px">
+              <div class="carousel-caption d-none d-md-block">
+                <h2>Welcome to Our Website</h2>
+                <p>Discover amazing features and services</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center align-items-center bg-success bg-gradient" style="height: 320px">
+              <div class="carousel-caption d-none d-md-block">
+                <h2>Quality Services</h2>
+                <p>We provide top-notch solutions for your needs</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center align-items-center bg-info bg-gradient" style="height: 320px">
+              <div class="carousel-caption d-none d-md-block">
+                <h2>Join Us Today</h2>
+                <p>Become part of our growing community</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+
+      <!-- Quick Links + Cards -->
+      <div class="container mb-5">
+        <div class="row">
+          <!-- Quick Links -->
+          <div class="col-lg-3 col-md-4 link-column">
+            <h3 class="section-title">Quick Links</h3>
+            <ul class="link-list">
+              <li><a href="#" class="link-item"><span class="link-number">1</span><span>Featured Products</span></a></li>
+              <li><a href="#" class="link-item"><span class="link-number">2</span><span>Our Services</span></a></li>
+              <li><a href="#" class="link-item"><span class="link-number">3</span><span>Testimonials</span></a></li>
+              <li><a href="#" class="link-item"><span class="link-number">4</span><span>Contact Us</span></a></li>
+            </ul>
+          </div>
+
+          <!-- Cards -->
+          <div class="col-lg-9 col-md-8">
+            <div class="row g-4">
+              <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title"><i class="bi bi-box-seam me-2"></i>Card 1</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#" class="btn btn-sm btn-outline-primary">Explore</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title"><i class="bi bi-gear me-2"></i>Card 2</h5>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#" class="btn btn-sm btn-outline-primary">Learn More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title"><i class="bi bi-chat-quote me-2"></i>Card 3</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#" class="btn btn-sm btn-outline-primary">Read More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title"><i class="bi bi-envelope me-2"></i>Card 4</h5>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#" class="btn btn-sm btn-outline-primary">Contact Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Why Choose Us -->
+      <section class="py-5 bg-white">
+        <div class="container">
+          <div class="row text-center mb-5">
+            <div class="col">
+              <h2 class="fw-bold">Why Choose Us?</h2>
+              <p class="lead">We provide exceptional value to our customers</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 mb-4">
+              <div class="text-center">
+                <div class="circle-btn"><i class="bi bi-lightning-charge"></i></div>
+                <h4>Fast & Efficient</h4>
+                <p>Our services are optimized for speed and efficiency, saving you time and resources.</p>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="text-center">
+                <div class="circle-btn"><i class="bi bi-shield-check"></i></div>
+                <h4>Reliable & Secure</h4>
+                <p>We prioritize the security and reliability of our products to give you peace of mind.</p>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="text-center">
+                <div class="circle-btn"><i class="bi bi-people"></i></div>
+                <h4>24/7 Support</h4>
+                <p>Our dedicated team is available around the clock to assist you with any issues.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center text-white py-4 mt-auto">
+      <div class="d-flex justify-content-center mb-3">
+        <a href="#" class="btn circle-btn"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="btn circle-btn"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="btn circle-btn"><i class="bi bi-instagram"></i></a>
+      </div>
+      <p class="mb-0">&copy; 2025 My Website. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
