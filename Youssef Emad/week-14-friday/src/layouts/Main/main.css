@@ -1,0 +1,16 @@
+.main {
+  flex: 1;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.main h2 {
+  margin-top: 0;
+  font-size: 28px;
+  color: #333;
+}
+
+.main p {
+  font-size: 16px;
+  color: #555;
+}
