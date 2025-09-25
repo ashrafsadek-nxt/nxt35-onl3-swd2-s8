@@ -1,0 +1,33 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f1f1f1;
+  padding: 10px 20px;
+  border-top: 1px solid #ccc;
+}
+
+.footer-left,
+.footer-right {
+  flex: 1;
+  text-align: center;
+}
+
+.footer-center {
+  flex: 0.5;
+  text-align: center;
+}
+
+.footer-btn {
+  padding: 8px 16px;
+  font-size: 16px;
+  border: none;
+  background: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.footer-btn:hover {
+  background: #0056b3;
+}
