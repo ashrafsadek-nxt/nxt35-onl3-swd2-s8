@@ -1,0 +1,48 @@
+*{
+    background-color: rgb(208, 209, 210);
+}
+form{
+    margin-top: 150px ;
+    
+
+}
+.c{
+    
+    background-color: white;
+    border-radius: 10px;
+    height: 30px;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0,0, 0.4);
+    border: none;
+     
+}
+.b{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    width: 100px;
+    box-shadow: 0 4px 8px rgba(0, 0,0, 0.5);
+}
+
+.c:hover{
+    background-color: rgb(222, 220, 220);
+}
+.b:hover{
+    background-color: rgb(69, 68, 68);
+}
+a{
+    display: inline-block;
+    
+   background-color: black;
+   color: white;
+   width: 100px;
+   border-radius: 10px;
+   box-shadow: 0 4px 8px rgba(0, 0,0, 0.5);
+
+   
+}
+a:hover{
+    background-color: rgb(69, 68, 68);
+    
+}
+
