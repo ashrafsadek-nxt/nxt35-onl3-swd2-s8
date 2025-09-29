@@ -1,0 +1,57 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Navbar */
+nav {
+  width: 100%;
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  position: fixed;   /* stays at top */
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+/* Main content */
+.content {
+  flex: 1;
+  padding: 100px 20px 20px; /* top padding = navbar height */
+  text-align: center;
+}
+
+/* Images */
+.page-image {
+  max-width: 25%;    /* smaller size than before */
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: auto;
+}
