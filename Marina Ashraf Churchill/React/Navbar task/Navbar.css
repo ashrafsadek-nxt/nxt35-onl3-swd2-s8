@@ -1,0 +1,37 @@
+*{
+    
+    margin: 0;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+nav{
+background-color: rgb(96, 91, 91);
+margin-bottom: 2rem;
+}
+ul{
+     display: flex;
+  justify-content: center; 
+  align-items: center;     
+  list-style: none;        
+  padding: 10px;                      
+  gap: 10px; 
+}
+li{
+    text-decoration: none;
+       list-style: none;
+  
+}
+.nav-link{
+   text-decoration: none;
+  font-weight: bold;
+  color: aliceblue;
+  font-size: 20px;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s;
+  margin: 2rem auto;
+}
+
+.nav-link:hover {
+  color: #00c3ff;
+}
