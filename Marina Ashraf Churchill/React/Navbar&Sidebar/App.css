@@ -1,0 +1,15 @@
+
+
+.main{
+  display: flex;
+  align-items: center;
+  gap: 300px;
+  margin-top: 2rem;
+}
+.displayElement{
+  text-align: center;
+  /* justify-self: center; */
+ display: flex; 
+ justify-content: center;
+ margin-bottom: 10rem;
+}

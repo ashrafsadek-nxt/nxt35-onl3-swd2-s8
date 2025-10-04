@@ -1,0 +1,39 @@
+*{
+    
+    margin: 0;
+    text-align: center;
+    box-sizing: border-box;
+}
+ .dv{
+  width: 100%;
+ }
+.navlink{
+background-color: rgb(96, 91, 91);
+width: 100%;
+}
+ul{
+     display: flex;
+  justify-content: center; 
+  align-items: center;     
+  list-style: none;        
+  padding: 10px;                      
+  gap: 10px; 
+}
+li{
+    text-decoration: none;
+       list-style: none;
+  
+}
+.nav-link{
+   text-decoration: none;
+  font-weight: bold;
+  color: aliceblue;
+  font-size: 20px;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s;
+  margin: 2rem auto;
+}
+
+.nav-link:hover {
+  color: #00c3ff;
+}
