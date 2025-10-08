@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>try</title>
+</head>
+<body>
+  <h1>Users and their Posts</h1>
+
+  <table border="1" id="userTable">
+    <thead>
+      <tr>
+        <th>User Name</th>
+       
+        <th>Posts</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./assets/js/try.js"></script>
+</body>
+</html>
