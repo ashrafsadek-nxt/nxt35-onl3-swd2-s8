@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anas Mohamed | Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #0f0f0f;
+      color: #f1f1f1;
+      line-height: 1.6;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      background: #1a1a1a;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    header h1 {
+      font-size: 26px;
+      color: #fff;
+    }
+    nav a {
+      margin: 0 15px;
+      color: #ccc;
+      text-decoration: none;
+      font-size: 15px;
+    }
+    nav a:hover {
+      color: #00aaff;
+    }
+    section {
+      padding: 60px 50px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .about, .education, .work, .projects, .contact {
+      background: #181818;
+      border-radius: 10px;
+      padding: 30px;
+      margin-bottom: 50px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    }
+    h2 {
+      color: #00aaff;
+      margin-bottom: 15px;
+    }
+    p {
+      color: #ccc;
+      margin-bottom: 15px;
+    }
+    .about-content {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 30px;
+    }
+    .about-content img {
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #00aaff;
+    }
+    .about-text {
+      flex: 1;
+      min-width: 250px;
+    }
+    .contact a {
+      color: #00aaff;
+    }
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    .project {
+      background: #222;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+    .project:hover {
+      transform: translateY(-5px);
+    }
+    .project img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .project-content {
+      padding: 15px;
+    }
+    .project-content h3 {
+      margin: 0 0 10px;
+    }
+    footer {
+      background: #1a1a1a;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #777;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      background: #111;
+      border: none;
+      color: #fff;
+      border-radius: 5px;
+    }
+    form button {
+      background: #00aaff;
+      border: none;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    form button:hover {
+      background: #0088cc;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Anas Mohamed</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#work">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <div class="about-content">
+      <img src="https://scontent.fcai19-12.fna.fbcdn.net/v/t39.30808-6/489093873_2135125786941119_1078106560447933737_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=T5ZV1vXHwGoQ7kNvwFsdD5N&_nc_oc=AdlQ1pxbCq7gQIf1YaAir9rJq23SzqnmYvQJZMiP-lvN8ORUVtWYHjRQWp8ymX_LXJo&_nc_zt=23&_nc_ht=scontent.fcai19-12.fna&_nc_gid=VTQIEG5aG7gnde3QjBm21w&oh=00_AfejdZ65fi2bldguAz1GDHzRbTLHJvZPm38Fk9qIHmCWxA&oe=68F00BF0" alt="Anas Mohamed Photo">
+      <div class="about-text">
+        <p>Hello, I'm <strong>Anas Mohamed</strong>, a Front-End Web Developer passionate about building modern, responsive, and user-friendly websites using HTML, CSS, JavaScript, and React.</p>
+        <p>I started my journey in 2024 and continue to improve my skills through projects and training programs such as the <strong>Digital Egypt Pioneers Initiative</strong>.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="education" class="education">
+    <h2>Education</h2>
+    <p><strong>New Cairo Academy</strong><br>Bachelor’s Degree — Information Systems (2021 – 2025)</p>
+    <h3>Certification</h3>
+    <p>Front-End Developer Training — Digital Egypt Pioneers Initiative (DEPI)<br>Worked with HTML, CSS, JavaScript, and React — built interactive and responsive websites.</p>
+  </section>
+
+  <section id="work" class="work">
+    <h2>Work Experience</h2>
+    <p><strong>Front-End Developer — Training (DEPI)</strong><br>June 2025 – Present</p>
+    <ul>
+      <li>Designed and developed websites using HTML, CSS, JavaScript, and React.</li>
+      <li>Implemented interactive UI components and responsive layouts.</li>
+      <li>Worked on accessibility and cross-browser compatibility.</li>
+    </ul>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>My Work</h2>
+    <div class="projects-grid">
+      <div class="project">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFoo8y4kLV98oUwTZTAQCzqmlJUqOR0NLFg&s" alt="Hotel Website">
+        <div class="project-content">
+          <h3>Hotel Website (University Project)</h3>
+          <p>Built a responsive hotel website using HTML5, CSS3, and JavaScript with clean UI/UX.</p>
+        </div>
+      </div>
+      <div class="project">
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=60" alt="Project Coming Soon">
+        <div class="project-content">
+          <h3>Project — Coming Soon</h3>
+          <p>Short description of the project goes here. Technologies: React, JavaScript, CSS.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:shabashanas@gmail.com">shabashanas@gmail.com</a></p>
+    <p>Phone: 01010122300</p>
+    <p>GitHub: <a href="https://github.com/AnAs21MohaMed">github.com/AnAs21MohaMed</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/anasmohamed">linkedin.com/in/anasmohamed</a></p>
+
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Anas Mohamed — All rights reserved.
+  </footer>
+
+</body>
+</html>
