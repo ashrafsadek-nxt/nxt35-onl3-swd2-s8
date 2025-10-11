@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: #f8f8f8;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+.hero img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.products {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+}
+
+.product-card {
+    text-align: center;
+    width: 22%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.product-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.product-card h3 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.product-card p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.product-card button {
+    padding: 8px 15px;
+    border: none;
+    background: black;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+    background: #f8f8f8;
+}
+
+.footer-links a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer .icons span {
+    margin: 0 10px;
+    font-size: 14px;
+}
