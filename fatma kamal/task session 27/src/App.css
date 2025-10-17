@@ -1,0 +1,12 @@
+nav{
+  background-color: black;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+a{
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+}
