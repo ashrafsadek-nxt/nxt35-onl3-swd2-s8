@@ -1,0 +1,18 @@
+.navbar{
+    display: flex;
+    background-color: black;
+    height: 30px;
+    padding: 10px;
+    gap: 15px;
+    align-items: center;
+   
+
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+    margin-left: 30px;
+}
+.navbar a:hover{
+    color: rgb(193, 193, 237);
+}
