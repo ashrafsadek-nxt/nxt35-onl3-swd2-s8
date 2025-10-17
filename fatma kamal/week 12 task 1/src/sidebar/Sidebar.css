@@ -1,0 +1,17 @@
+.sidebar{
+    width: 15%;
+    background-color: rgb(63, 62, 62);
+    color: white;
+    padding: 20px;
+}
+.sidebar ul{
+    list-style: none;
+    padding: 0;
+}
+.sidebar ul li{
+    margin: 15px 0px;
+}
+.sidebar ul li a{
+    color: white;
+    text-decoration: none;
+}

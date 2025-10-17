@@ -1,0 +1,76 @@
+
+
+.card-container {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1 1 250px; 
+  max-width: 250px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: left;
+  padding-bottom: 15px;
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 15px;
+  font-size: 1.2rem;
+}
+
+.card p {
+  margin: 0 15px 15px;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.card button {
+  display: block;
+  margin: 0 15px;
+  padding: 8px 16px;
+  border: none;
+  background: #198754; /* أخضر زي Bootstrap */
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background: #146c43;
+}
+
+ 
+@media (max-width: 768px) {
+  .card-container {
+    justify-content: center;
+  }
+  .card {
+    flex: 1 1 100%;
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .card h3 {
+    font-size: 1rem;
+  }
+  .card p {
+    font-size: 0.85rem;
+  }
+  .card button {
+    width: 100%;
+    text-align: center;
+  }
+}

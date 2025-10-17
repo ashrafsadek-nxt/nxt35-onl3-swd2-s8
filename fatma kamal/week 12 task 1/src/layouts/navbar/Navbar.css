@@ -1,0 +1,22 @@
+#dv{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+img{
+    width: 80px;
+    height: 80px;
+}
+
+li{
+    display: inline;
+    margin: 5px;
+    padding: 5px;
+}
+
+.a{
+    color: white;
+    text-decoration: none;
+}
