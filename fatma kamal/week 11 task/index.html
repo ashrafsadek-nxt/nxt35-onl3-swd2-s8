@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="">
+    <title>Login</title>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <!-- Main Section -->
+    <center class="container">
+        <!-- Login Form -->
+        <form action="" id="loginForm" >
+            <!--NAME -->
+            <div>
+                <label for="n">Name</label>
+                <input type="text" id="n" class="ip" placeholder="Name" required>
+            </div>
+            <!-- Email Field -->
+            <div class="field">
+                <label for="email">email</label>
+                <input type="email" id="email" name="email" class="ip" required placeholder="email">
+                <!-- Error Message For Email -->
+                <small class="error" id="emailError"></small>
+            </div>
+            <!-- Password Field -->
+            <div class="field">
+                <label for="password">passw</label>
+                <input type="password" id="password" name="password" class="ip" required placeholder="pass">
+                <!-- Error Message For Password -->
+                <small class="error" id="passwordError"></small>
+            </div>
+            <button type="submit" id="btn">Login</button>
+            <p id="status" class="status"></p>
+        </form>
+    </center>
+    <!-- Footer -->
+    <script type="module" src="assets/js/login.js"></script>
+</body>
+</html>
