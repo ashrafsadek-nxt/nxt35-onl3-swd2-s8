@@ -1,0 +1,42 @@
+#dv{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: fixed;
+    bottom: 0px;
+    background-color: rgb(250, 233, 249);
+    width: 100%;
+}
+
+img{
+    width: 100px ;
+    
+   
+}
+p{
+    display: inline-block;
+    margin-top: 0px;
+    font-size: 14px;
+    text-align: right;
+    line-height: 1.6;
+    clear: both;
+
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+@media (max-width:600) {
+    #dv{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+   
+    }
+   
+}
+
+    
+
