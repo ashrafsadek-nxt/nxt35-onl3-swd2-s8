@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    text-align: center;
+    background-color: rgb(215, 24, 24);
+}
+header h1{
+    color: rgb(10, 10, 10);
+    padding: 20px;
+}
+main{
+    position: relative;
+    display: flex;
+}
+ section{
+padding: 1rem;
+}
+.left{
+    background-color: gray;
+}
+.left form{
+    border: 2px green dashed;
+   
+}
+form div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.left form label{
+    padding: 5px;
+}
+#name{
+    background-color: yellow;
+    border: none;
+}
+ul{
+    list-style: none;
+  margin-left: 50px;
+}
+ .left  li{
+    text-align: center;
+    color: red;
+    margin: 5px;
+width: fit-content;
+background-color: rgb(214, 132, 132);
+}
+
+.right{
+    background-color: rgb(228, 165, 165);
+    height: fit-content;
+}
+.right .all p{
+      margin: 30px;
+}
+.right .min p{
+ 
+    color: red;
+    display: inline;
+    border: 2px solid black;
+    padding: 5px;
+}
