@@ -1,0 +1,36 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+  background-color: #819fbe;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+
+
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+}
+
+a {
+  color: #ecf0f1;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+   padding: 1rem 1rem;
+text-align: center;
+}
+
+
+
+
+a:hover {
+  color: #3498db;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
