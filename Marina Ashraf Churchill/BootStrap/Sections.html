@@ -1,1 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 
+    <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header, footer {
+      background: lightblue;
+      padding: 20px;
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+    .main {
+      flex: 1;
+      display: flex;
+    }
+
+    nav {
+      background: violet;
+      flex: 1;
+      padding: 15px;
+    }
+
+    nav ul {
+      list-style: none;
+      text-align: left;
+    }
+
+    nav ul li {
+      margin: 10px 0;
+    }
+
+    .content {
+      background: rosybrown;
+      flex: 3;
+      padding: 20px;
+    }
+
+    aside {
+      background: violet;
+      flex: 1;
+      padding: 15px;
+    }
+
+    /* ---------- Responsive ---------- */
+    @media (max-width: 768px) {
+      .main {
+        flex-direction: column;
+      }
+
+    
+    }
+
+  </style>
+</head>
+<body>
+    
+<!-- !تاسم2 -->
+  <div class="container">
+    <header>HEADER</header>
+    
+    <div class="main">
+      <nav>
+        <h3>MENU</h3>
+        <ul>
+          <li>item1</li>
+          <li>item2</li>
+          <li>item3</li>
+          <li>item4</li>
+          <li>item5</li>
+        </ul>
+      </nav>
+
+      <div class="content">
+        <h3>CONTENT</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+          Quod, at aspernatur iusto iure quasi perspiciatis 
+          perferendis illo, dolorum fugiat temporibus, 
+          nam nihil corporis vel non?</p>
+      </div>
+
+      <aside>
+        <h3>AD</h3>
+        <p>AD</p>
+      </aside>
+    </div>
+
+    <footer>FOOTER</footer>
+  </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+
+    
+</body>
+</html>
