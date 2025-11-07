@@ -1,0 +1,49 @@
+/* تنسيق الصفحة بالكامل */
+body {
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+  font-family: Arial, sans-serif;
+}
+
+/* الحاوية الأساسية */
+.container {
+  display: flex;
+  height: 100vh;
+  background: white;
+  border: 2px solid #333;
+  border-bottom-left-radius: 40px; /* الزاوية الدائرية اللي تحت */
+  overflow: hidden;
+}
+
+/* الجزء الأيسر */
+.left-section {
+  width: 25%;
+  background: #ddd;
+  border-right: 2px solid #333;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* الجزء الأيمن */
+.right-section {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* الأعمدة داخل الجزء الأيمن */
+.column {
+  width: 48%;
+  background: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+/* عشان تبقى الزوايا ناعمة في التصميم */
+.container, .column, .left-section {
+  border-radius: 8px;
+}
