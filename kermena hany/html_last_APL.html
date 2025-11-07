@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+HTML APIs
+-- A simple program that connects two programs <== API
+API ==> Application Programming Interface
+API ==> programming language examples js php python asp java
+API ==> browser features examples Geolocation API DnD API Web Storage Web Socket Web Worker
+Geolocation API ==> navigator.geolocation
+- get current position with navigator.geolocation.getCurrentPosition
+- watch position with navigator.geolocation.watchPosition
+DnD API ==> Drag and Drop
+- use draggable="true" on elements
+- handle dragstart dragover drop events in JS
+Web Storage API
+- sessionStorage for data tied to a tab session
+- localStorage for persistent data across sessions
+Web Storage API examples
+- save a string
+- save JSON objects as strings
+- read back and parse JSON
+- remove items
+- clear storage
+Web Socket
+- use WebSocket in JS to open a persistent socket
+- send and receive messages in real time
+Web Worker
+- run heavy work off the main thread
+- create a worker with new Worker('worker.js')
+- communicate with postMessage and onmessage
+Example code for saving data to localStorage
+- save a value
+- save an object
+- read a value
+- remove a key
+- clear storage
+Example code for sessionStorage and localStorage usage
+-->
+<!-- // minimal drag and drop handlers example
+element.draggable = true
+element.addEventListener('dragstart', e => e.dataTransfer.setData('text', e.target.id))
+dropzone.addEventListener('dragover', e => e.preventDefault())
+dropzone.addEventListener('drop', e => {
+const id = e.dataTransfer.getData('text')
+const dragged = document.getElementById(id)
+dropzone.appendChild(dragged)
+})
+minimal WebSocket example
+const ws = new WebSocket('wss://example.com/socket')
+ws.addEventListener('open', () => ws.send('hello'))
+ws.addEventListener('message', e => console.log(e.data))
+minimal Web Worker example
+const worker = new Worker('worker.js')
+worker.postMessage({task: 'start'})
+worker.onmessage = e => console.log(e.data) -->
+
+</body>
+</html>

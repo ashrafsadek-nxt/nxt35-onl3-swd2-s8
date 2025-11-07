@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+</head>
+<body>
+
+    <h1>نموذج Form</h1>
+    <p>طريقة أخذ البيانات من المستخدم وإرسالها إلى backend and database</p>
+
+    <form action="index.html" method="post">
+    <div>
+        <label for="name"></label>
+        <input type="text" name="name" id="name" placeholder="enter name" autofocus>
+    </div>
+
+    <div>
+        <label for="pwd">password:</label>
+        <input type="password" name="pwd" id="pwd">
+    </div>
+    <div>
+
+<label for="male">male</label>
+
+<input type="radio" name="gender" id="male" readonly>
+
+<label for="female">female</label>
+
+<input type="radio" name="gender" id="female">
+
+</div>
+<div>
+<label for="fb">football</label>
+<input type="checkbox" name="sport" id="fb">
+<label for="hb">handball</label>
+<input type="checkbox" name="sport" id="hb">
+<label for="bb">basketball</label>
+<input type="checkbox" name="sport" id="bb">
+</div>
+<div>
+    <label for="num">رقم</label>
+    <input type="number" name="num" id="num" min="10" max="20" placeholder="enter number">
+</div>
+
+<div>
+    <label for="birthdate1">birthdate</label>
+    <input type="date" name="birthdate1" id="birthdate1">
+</div>
+
+<div>
+    <label for="birthdate2">birth week</label>
+    <input type="week" name="birthdate2" id="birthdate2">
+</div>
+
+<div>
+    <label for="birthdate3">birth month</label>
+    <input type="month" name="birthdate3" id="birthdate3">
+</div>
+<div>
+  <label for="time">birth time</label>
+  <input type="time" name="time" id="time">
+</div>
+
+<div>
+  <label for="site">website</label>
+  <input type="url" name="site" id="site" placeholder="https://example.com">
+</div>
+
+<div>
+  <label for="mail">email</label>
+  <input type="email" name="mail" id="mail" placeholder="example@gmail.com">
+</div>
+<div>
+
+<label for="">color</label>
+
+<input type="color" name="" id="">
+
+</div>
+
+<div>
+
+<label for="">rate us</label>
+
+<input type="range" min="1" max="5" name="" id="">
+
+</div>
+
+<div>
+
+<input type="file" name="" id="">
+
+</div>
+<br>
+<br>
+<br>
+<div>
+
+<input type="search" name="" id="">
+
+</div>
+<div>
+
+<input type="hidden" name="" id="" value="100">
+
+</div>
+<div>
+
+<textarea name="" id="" value=""></textarea>
+
+</div>
+<div>
+
+<select name="" id="">
+
+<option disabled>select city</option>
+
+<option value="ca" selected>Cairo</option>
+
+<option value="gi">Giza</option>
+
+</select>
+
+</div>
+<br>
+<br>
+<br>
+<div>
+  <input type="submit" value="save">
+
+  <input type="reset" value="delete">
+</div>
+    </form>
+
+</body>
+</html>
