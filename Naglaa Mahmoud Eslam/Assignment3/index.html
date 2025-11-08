@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 3 Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>My Portfolio</h1>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <div></div><div></div><div></div>
+        </div>
+        <nav id="nav-menu">
+            <a href="#about">About Me</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello! I'm a web developer learning interactive JavaScript and responsive design.</p>
+            <button onclick="sayHello()">Click Me!</button>
+        </section>
+
+        <section id="projects">
+            <h2>My Projects</h2>
+            <div class="slider">
+                <img src="jjkk.jpg" alt="Project 1">
+                <img src="teamwork-arabic.png" alt="Project 2">
+                <img src="front-end.jpg" alt="Project 3">
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form id="contactForm">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
