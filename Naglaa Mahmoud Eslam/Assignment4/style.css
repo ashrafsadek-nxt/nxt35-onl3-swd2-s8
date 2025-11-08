@@ -1,0 +1,18 @@
+body {
+    background-color: #f9f9f9;
+}
+
+/* تعديل الألوان لتناسب التصميم */
+.navbar-brand {
+    font-weight: bold;
+}
+
+h2 {
+    color: #333;
+}
+
+/* تأثير hover على الأزرار */
+.btn:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
