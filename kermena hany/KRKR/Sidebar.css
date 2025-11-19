@@ -1,0 +1,33 @@
+.sidebar {
+  width: 180px;
+  background-color: #222;
+  color: white;
+  padding: 15px;
+  height: calc(100vh - 60px);
+  overflow-y: auto;
+}
+
+.sidebar-links {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 15px;
+}
+
+.sidebar-links li {
+  margin-bottom: 10px;
+}
+
+.sidebar-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.sidebar-links a:hover {
+  color: #f39c12;
+}
+
+.sidebar-text {
+  font-size: 13px;
+  line-height: 1.5;
+  color: #ddd;
+}
