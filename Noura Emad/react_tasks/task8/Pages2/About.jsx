@@ -1,8 +1,7 @@
 function About() {
   return (
     <div>
-      <h1>ℹ️ App information</h1>
-      <p>هذه الصفحة تحتوي على معلومات عن التطبيق</p>
+      <h1> App information</h1>
       <div style={{
         backgroundColor: 'white',
         padding: '20px',
@@ -19,5 +18,6 @@ function About() {
     </div>
   );
 }
+
 
 export default About;
