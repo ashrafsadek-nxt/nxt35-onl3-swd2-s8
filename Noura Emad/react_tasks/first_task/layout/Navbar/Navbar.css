@@ -1,0 +1,26 @@
+.Navbar {
+  background-color: rgb(56, 54, 54);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+}
+.Navbar .logo{
+  width: 45px;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+.Navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+.Navbar ul li {
+  display: inline;
+}
+
+.Navbar a {
+  color: #fff;
+}
