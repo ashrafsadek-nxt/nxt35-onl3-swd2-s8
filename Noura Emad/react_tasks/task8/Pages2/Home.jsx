@@ -1,8 +1,8 @@
 function Home() {
   return (
     <div>
-      <h1>🏠 Home</h1>
-      <p>Welcome to my App</p>
+      <h1> Home</h1>
+      <p>Welcome to App</p>
       <div style={{
         backgroundColor: 'white',
         padding: '20px',
@@ -15,5 +15,6 @@ function Home() {
     </div>
   );
 }
+
 
 export default Home;
