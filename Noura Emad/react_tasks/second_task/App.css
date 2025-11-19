@@ -1,0 +1,12 @@
+.app{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.main{
+    display: flex;
+    height: 58vh;
+   background-color: white;
+   
+}

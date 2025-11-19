@@ -1,0 +1,23 @@
+.Footer{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 10vh;
+    background-color: rgb(56, 54, 54); 
+}
+p{
+    color: white;
+}
+
+.Footer ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+
+ul li a {
+    text-decoration: none;
+    color: white;
+}
