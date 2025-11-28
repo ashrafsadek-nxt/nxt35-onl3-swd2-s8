@@ -1,0 +1,15 @@
+/* Reset default margin */
+body, html, #root {
+  margin: 0;
+  height: 100%;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 72vh; /* Full height */
+}
+
+main {
+  flex: 1; /* Take up remaining space */
+}
